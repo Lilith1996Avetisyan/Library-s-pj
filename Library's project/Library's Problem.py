@@ -156,6 +156,18 @@ class Bookcopy:
     borrowed_date: date
 
 
+if __name__ == "__main__":
+    id_number = input("Please enter the student's id: ")
+    isbn = input("Please enter the book's ISBN: ")
+
+    if id_number not in Student:
+        raise Exception("Invalid logistics type")
+
+    if isbn not in Book:
+        raise Exception("Invalid logistics type")
+
+
+
 s00001 = Student('Lilit Avetisyan', 22, 's00001', 'avetisyan.lilit.96@mail.ru', 'mechanica')
 s00002 = Student('Lilith Avyan', 23, 's00002', 'avetisyan.96@mail.ru', 'mechanica')
 s00003 = Student('Lilit Avetyan', 24, 's00003', 'avetisyan.lilit.@mail.ru', 'mechanica')
