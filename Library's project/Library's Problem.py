@@ -161,10 +161,15 @@ if __name__ == "__main__":
     isbn = input("Please enter the book's ISBN: ")
 
     if id_number not in Student:
-        raise Exception("Invalid logistics type")
+        raise Exception("Invalid id number")
 
     if isbn not in Book:
-        raise Exception("Invalid logistics type")
+        raise Exception("Invalid ISBN")
+
+    desired_book = input("What book do you want?: ")
+
+    library_book = Library()
+    library_book.lib(id_number, isbn)
 
 
 
