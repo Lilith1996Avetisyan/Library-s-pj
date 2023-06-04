@@ -56,7 +56,7 @@ class Student:  # usanoxi bnutagir, pordzelu em gradarani qart stexcel anhatakan
               ', book borrowing limit: ', self.book_borrowing_limit)
 
 class Library:
-    def lib(self, student_list, book_list):
+    def __init__(self, student_list, book_list):
     # library_name = "YSU Library"
         self.student_list = student_list
         self.book_list = book_list
@@ -169,8 +169,7 @@ if __name__ == "__main__":
     desired_book = input("What book do you want?: ")
 
     library_book = Library()
-    library_book.lib(id_number, isbn)
-
+    library_book.Library(id_number, isbn)
 
 
 s00001 = Student('Lilit Avetisyan', 22, 's00001', 'avetisyan.lilit.96@mail.ru', 'mechanica')
